@@ -42,13 +42,15 @@ const getConditionalContent = (slide, setSlide, setPage) =>{
                 <div>
                     <h2>Our Goal For You:</h2>
                     <p>
-                        orem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam sodales velit quis tortor vestibulum, ac pellentesque libero commodo. 
-                        Praesent lectus tortor, vestibulum at vulputate et, luctus nec sem. Sed sit 
-                        amet sodales ligula, vel commodo dolor. Interdum et malesuada fames ac ante ipsum 
-                        primis in faucibus. Curabitur magna nunc, bibendum vitae est vel, sagittis porttitor diam. 
-                        Praesent tincidunt efficitur orci vitae cursus. Nulla felis magna, dignissim non faucibus non, 
-                        facilisis at tortor. Vivamus in dignissim nunc. 
+                        Talking about death can be incredibly difficult. Planning for your own death, even more so. But by
+                        thinking about the subject now and taking steps to prepare early, you can help your loved ones focus
+                        on grieving, rather than a mountain of difficult decisions, trivial tasks, and financial debt. And for
+                        you, getting this out of the way earlier on in your life means you can focus more on the thing that matters
+                        most: living.
+                        <br></br>
+                        <br></br>
+                        In the words of Caitlin Doughty, “Facing death is not for the faint-hearted. It is far too challenging to expect that each citizen will do so on [their] own."
+                        We hope Momento Mori will accompany you on this journey and make facing death just a little less scary.
                     </p>
                     <br></br>
                     <button onClick = {()=> {setPage(1)}}>Lets get started!</button>
