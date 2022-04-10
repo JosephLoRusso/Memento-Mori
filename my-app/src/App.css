@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.half-screen {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100vmax;
+  text-align: center;
+  overflow: hidden;
+  
+}
+.half-screen .left-block{
+  background-color: rgb(255, 133, 52);
+  color: white;
+}
+
+.half-screen .right-block{
+  background-color: rgb(253, 237, 218);
+  padding: 25vmax 0% 25vmax 0%;
+}
