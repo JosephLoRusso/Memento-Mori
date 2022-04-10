@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height: 100%;
+  font-family: "Courier New";
 }
 
 .half-screen {
@@ -15,12 +16,18 @@
   background-color: rgb(255, 133, 52);
   color: white;
 }
+.half-screen .left-block {
+  background-color: rgb(255, 133, 52);
+  color: white;
+}
 
 .half-screen .right-block{
   background-color: rgb(253, 237, 218);
   padding: 25vmax 0% 25vmax 0%;
 }
 
+
+/* STYLES FOR PAGE 1 */
 .page1{
   background-color: rgb(255, 247, 236);
   display: flex;
@@ -34,6 +41,9 @@
   color:rgb(51, 28, 0);
   background-color: inherit;
   font-family: inherit; 
+}
+.page1 p{
+  margin: 0% 20%;
 }
 
 .previous {
@@ -70,4 +80,41 @@ input[type=submit], button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+input[type=checkbox]{
+  background-color: orange;
+}
+
+/* STYLES FOR PAGE 2 */
+
+.page2 {
+  display: flex;
+  flex-direction: row;
+  height: 60vmax
+}
+
+.page2 .sidebar{
+  flex: 1;
+  background-color: rgb(255, 133, 52);
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 247, 236);
+  padding: 10% 0% 0% 0%;
+
+}
+
+.page2 .sidebar *{
+  padding: 1em;
+}
+.page2 .tasklist{
+  flex: 2;
+  background-color: rgb(255, 247, 236);
+  text-align: left;
+  padding: 2% 4%;
+}
+
+
+.page2 .tasklist .modal .modal-dialog{
+  min-width: 66%;
 }

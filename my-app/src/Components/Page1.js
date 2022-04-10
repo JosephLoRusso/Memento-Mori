@@ -3,38 +3,25 @@ import React, {useState} from "react";
 
 const Page1 = (props) =>{
     const [slide, setSlide] = useState(0);
-    const handleNextSlide = () => {
-        setSlide(slide + 1)
-    }
-    const handlePreviousSlide = () => {
-        setSlide(slide - 1)
-    }
-    const buttonRenderer = ()=> {
-        return(               
-        <div>
-            <div onClick = {handleNextSlide} class="previous round">&#8249;</div>
-            <div onClick = {handlePreviousSlide} class="next round">&#8250;</div>
-        </div>
-        )
-    }
 
     return(
         <div className = "page1" >
             <div>
-                {getConditionalContent(slide, handleNextSlide, handlePreviousSlide)}
+                {getConditionalContent(slide, setSlide, props.setPage)}
             </div>
         </div>
     );
 };
 
 //Proof of concept. TODO: add state that saves name
-const getConditionalContent = (slide, nextSlide, lastSlide) =>{
+//(using setPage here is lazy bad practice. Go back and fix later)
+const getConditionalContent = (slide, setSlide, setPage) =>{
     switch (slide){
         case 0:
             return (
             <div>
                 <h2>What is your name?</h2>
-                <form onSubmit  = {nextSlide}>
+                <form onSubmit  = {() => {setSlide(1)}}>
                     <input type= "text" placeholder="Your name.."></input>
                     <br></br>
                     <input type="submit" value="Continue..."></input>
@@ -47,13 +34,24 @@ const getConditionalContent = (slide, nextSlide, lastSlide) =>{
                     <h2>Hello there Emily!</h2>
                     <p>This is Momento Mori, your place to learn about your death journey. 
                     </p>
-                    <button onClick = {nextSlide}>How do we work?</button>
+                    <button onClick = {() => {setSlide(2)}}>How do we work?</button>
                 </div>
                 );
         case 2://FILL IN INFO ABOUT HOW 
             return(
                 <div>
-                    <button onClick = {nextSlide}>Lets get started!</button>
+                    <h2>Our Goal For You:</h2>
+                    <p>
+                        orem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Etiam sodales velit quis tortor vestibulum, ac pellentesque libero commodo. 
+                        Praesent lectus tortor, vestibulum at vulputate et, luctus nec sem. Sed sit 
+                        amet sodales ligula, vel commodo dolor. Interdum et malesuada fames ac ante ipsum 
+                        primis in faucibus. Curabitur magna nunc, bibendum vitae est vel, sagittis porttitor diam. 
+                        Praesent tincidunt efficitur orci vitae cursus. Nulla felis magna, dignissim non faucibus non, 
+                        facilisis at tortor. Vivamus in dignissim nunc. 
+                    </p>
+                    <br></br>
+                    <button onClick = {()=> {setPage(1)}}>Lets get started!</button>
                 </div>
             )
 

@@ -4,9 +4,14 @@ import Task from './Task.js';
 const Page2 = (props) =>{
 
     return(
-        <div>
-            <SideBar />
-            <TaskList />
+        <div className = "page2">
+            <div className = "sidebar">
+                <SideBar />
+            </div>
+            <div className = "tasklist">
+                <TaskList />
+                <button style = {{float: 'right'}}>All Done!</button>
+            </div>
         </div>
     );
 };
@@ -15,7 +20,9 @@ const Page2 = (props) =>{
 function SideBar(props) {
     return (
         <div>
-            <h1>Whatever what we want on the side </h1>
+            <h1>momento mori</h1>
+            <p>~</p>
+            <p>be the plans you want to see in the world</p>
         </div>
     );
 };
@@ -30,18 +37,18 @@ function TaskList(props) {
             <Task description="Consider donating to charity" title="Consider donating to charity" info="Making a charitable donation is a common request for people. If you would like to donate to charity, select an organization, or multiple organizations, you would like to donate to and include them in your will. Money can be taken from your estate to help build your legacy."/>
 
             <h2>Practical</h2>
-            <Task description="Create a password list" title="Create a password list" info="It is important to create a list of all important usernames and passwords. Make sure to keep this list secured in a safe place. You should plan for how you want your social media to be handled, as well as who should gain access to your email account, if anyone."/>
-            <Task description="Create a file with important documents" title="Store important documents and records safely" info="You should remember to keep all important documents in a safe place so that they can be accessed when you pass on. This includes documents such as your birth certificate or any identifying records. This can help your loved ones when going through your belongings."/>
-            <Task description="Create a living will" title="Create a living will" info="Having a living will can give you peace of mind knowing that if you ever are in a "/>
-            <Task description="Write a will" title="title for task info" info="more detailed info on task"/>
-            <Task description="Choose an executor for your will" title="title for task info" info="more detailed info on task"/>
-            <Task description="Select guardians for any children" title="title for task info" info="more detailed info on task"/>
+            <Task description=" Create a password list" title="Create a password list" info="It is important to create a list of all important usernames and passwords. Make sure to keep this list secured in a safe place. You should plan for how you want your social media to be handled, as well as who should gain access to your email account, if anyone."/>
+            <Task description=" Create a file with important documents" title="Store important documents and records safely" info="You should remember to keep all important documents in a safe place so that they can be accessed when you pass on. This includes documents such as your birth certificate or any identifying records. This can help your loved ones when going through your belongings."/>
+            <Task description=" Create a living will" title="Create a living will" info="Having a living will can give you peace of mind knowing that if you ever are in a "/>
+            <Task description=" Write a will" title="title for task info" info="more detailed info on task"/>
+            <Task description=" Choose an executor for your will" title="title for task info" info="more detailed info on task"/>
+            <Task description=" Select guardians for any children" title="title for task info" info="more detailed info on task"/>
 
             <h2>Personal</h2>
-            <Task description="Preparing an obituary" title="title for task info" info="more detailed info on task"/>
-            <Task description="Plan for your final disposition" title="title for task info" info="more detailed info on task"/>
-            <Task description="Plan for any religious ceremonies" title="title for task info" info="more detailed info on task"/>
-            <Task description="Write messages to loved ones" title="title for task info" info="more detailed info on task"/>
+            <Task description=" Preparing an obituary" title="title for task info" info="more detailed info on task"/>
+            <Task description=" Plan for your final disposition" title="title for task info" info="more detailed info on task"/>
+            <Task description=" Plan for any religious ceremonies" title="title for task info" info="more detailed info on task"/>
+            <Task description=" Write messages to loved ones" title="title for task info" info="more detailed info on task"/>
         </div>
     );
 };

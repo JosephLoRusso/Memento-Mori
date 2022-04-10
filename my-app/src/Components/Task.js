@@ -5,7 +5,7 @@ function Task(props) {
   return (
     <div className="Task">
       <input type="checkbox"/>
-      <label><a data-toggle="modal" data-target="#modalCenter">{props.description}</a></label><br/>
+      <label><a data-toggle="modal" data-target="#modalCenter"> {props.description}</a></label><br/>
 
       <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
