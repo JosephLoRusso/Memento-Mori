@@ -7,10 +7,11 @@ const Layout = (props) =>{
 
     return(
         <div>
-            {getCondtionalContent()}
+            {getCondtionalContent(0)}
         </div>
     );
 };
+
 
 //conditionally renders the three main sections
 const getCondtionalContent = (page) =>{
